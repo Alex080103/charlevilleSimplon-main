@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.disabled-button{
+    opacity: 0.5;
+    pointer-events:none;
+    user-select: none;
+}
+
+.tabChange:hover {
+  filter: brightness(90%);
+}

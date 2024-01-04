@@ -1,0 +1,43 @@
+.clipper {
+    overflow: hidden;
+    clip-path: polygon(35% 0%, 100% 0, 100% 100%, 8% 100%); 
+    object-fit: cover;
+    position: relative;
+}
+
+
+
+.clipper2:after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    width: 50%;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    right: -25%;
+    color: #BD3124;
+    background-color: #BD3124;
+    clip-path: polygon(35% 0%, 100% 0, 100% 100%, 8% 100%); 
+}
+
+@media screen and (max-width: 640px) {
+    
+.clipper2:after {
+    display: none;
+}
+}
+
+@media screen and (min-width: 640px) {
+    .wrapper:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        /* border: solid 0.5px #e5e7eb; */
+        width: 97.5%;
+        height: 0%;
+        left: 0;
+        z-index: 999;
+    
+    }
+    }
